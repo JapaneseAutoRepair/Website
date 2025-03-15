@@ -1,0 +1,4 @@
+I just went and created new styles for all the pages, making them look awesome.
+Now, we need to edit the little things on the index page.
+I also want to edit the styles.css file because when I restyled it, I added CSS straight from Grok, and it for sure has duplicate class names.
+I need to add the ratings from Google Reviews.
