@@ -257,16 +257,24 @@
     <p>Japanese Auto Repair © 2024</p>
 </footer>
 <script>
-     document.addEventListener("DOMContentLoaded", function () {
+   document.addEventListener("DOMContentLoaded", function () {
     const menuToggle = document.querySelector(".menu-toggle");
     const navList = document.querySelector(".nav-list");
 
     if (menuToggle && navList) {
-        menuToggle.addEventListener("click", function () {
+        menuToggle.addEventListener("click", function (event) {
             navList.classList.toggle("active");
+            event.stopPropagation(); // Prevents click from bubbling up
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!navList.contains(event.target) && !menuToggle.contains(event.target)) {
+                navList.classList.remove("active");
+            }
         });
     }
 });
+
 </script>
 </body>
 </html>
