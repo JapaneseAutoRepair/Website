@@ -2473,6 +2473,8 @@ footer {
   }
   .menu-toggle {
       display: block;
+      color: var(--main-blue);
+      font-size: 2.2em;
   }
   .nav-list {
       display: none;
@@ -2603,7 +2605,7 @@ footer {
   .nav-list li {
       margin: 10px 0;
   }
-   .social-icon-header{
+  .social-icon-header{
     height: 40px;
     width: 40px;
     font-size: 20px;
@@ -2653,7 +2655,7 @@ footer {
   }
   .cta-buttons a{
     gap: 10px;
-    font-size: 12px;
+    font-size: 14px;
     padding: 10px;
   }
   .nav-gold-reviews{
@@ -2754,7 +2756,7 @@ footer {
 
   /* Adjust logo size on small screens */
   .JapaneseAutoLogo {
-      font-size: 1.5em; /* Smaller logo on mobile */
+      font-size: 1.75em; /* Smaller logo on mobile */
       padding: 10px;
   }
 
