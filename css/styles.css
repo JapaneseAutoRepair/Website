@@ -2409,6 +2409,7 @@ body {
 /* Footer */
 .info-section {
   display: flex;
+    justify-content: center;
   flex-wrap: wrap;
   gap: 20px;
   padding: 40px 20px;
