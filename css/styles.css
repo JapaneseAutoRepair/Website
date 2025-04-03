@@ -2469,13 +2469,23 @@ footer {
 
 @media (min-width: 1350px) {
   .hero {
-    background-position-y: 35em !important;
+    background-position-y: 35em ;
   }
   
 }
-@media (min-width: 1710px) {
+@media (min-width: 1720px) {
   .hero {
-    background-position-y: 40em !important;
+    background-position-y: 40em;
+  }
+}
+@media (min-width: 2008px) {
+  .hero {
+    background-position-y: 45em ;
+  }
+}
+@media (min-width: 2208px) {
+  .hero {
+    background-position-y: 51em ;
   }
 }
 
