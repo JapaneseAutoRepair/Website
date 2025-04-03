@@ -2467,6 +2467,18 @@ footer {
   
 }
 
+@media (min-width: 1350px) {
+  .hero {
+    background-position-y: 35em !important;
+  }
+  
+}
+@media (min-width: 1710px) {
+  .hero {
+    background-position-y: 40em !important;
+  }
+}
+
 @media (max-width: 768px) {
   .info-column{
 
@@ -2785,3 +2797,4 @@ footer {
   }
 
 }
+
