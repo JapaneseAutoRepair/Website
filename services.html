@@ -1,0 +1,490 @@
+<!-- Programmer: Gavin Web Development -->
+<!-- 11/21/24 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore expert auto repair services for Japanese vehicles at Japanese Auto Repair in Provo, UT.">
+    <title>Services - Japanese Auto Repair</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="./assets/favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="./assets/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="./assets/favicon-16x16.png">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0bd961eb30.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Header (Unchanged) -->
+    <div class="top">
+        <div class="innerleft">
+            <p aria-label="Address: 235 West 300 South, Provo, Utah, 84601">235 W 300 S, Provo, UT 84601</p>
+        </div>
+        <div class="innerright" aria-label="Business hours: Monday to Friday, 8 AM to 6 PM. Saturday, 8 AM to 2 PM;">
+            Mon-Fri: 8am-6pm, Sat: 8am-2pm
+        </div>
+    </div>
+    
+    <header>
+        <div class="nav-container">
+            <div class="addy"></div>
+            <div class="header-mobile">
+                <button class="menu-toggle" aria-label="Toggle navigation">☰</button>
+                <div class="logo-container">
+                    <a href="./index.html" class="JapaneseAutoLogo">Japanese Auto Repair</a>
+                </div>
+                
+            </div>
+            <nav class="nav-list" aria-label="Main Navigation">
+                <ul>
+                    <li class="nav-gold"><a href="./index.html">Home</a></li>
+                    <li class="nav-gold"><a href="./services.html">Services</a></li>
+                    <li class="nav-gold"><a href="./contact.html">Contact</a></li>
+                    <li class="nav-gold"><a href="./about.html">About</a></li>
+                        <div class="center-social">
+                            <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                            <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="https://www.instagram.com/_japaneseautorepair_/" target="_blank" class="social-icon-header">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://www.google.com/localservices/prolist?g2lbs=AAEPWCv1y3u3JTBds1Zp3UTm0hQ9QVI4jUDjRmcYLLUCGz3pPw8QnjdGmE-VpJwCF5n_KvtwlWjJpYuEH2M1s1zaawcoK6anXQ%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=japanese%20auto%20repair&oq=japanese%20auto%20repair&slp=MgBSAggCYAB6uAJDaFJxWVhCaGJtVnpaU0JoZFhSdklISmxjR0ZwY2tqZWs3dkQ1WUNBZ0FoYUloQUFFQUVRQWhnQUdBRVlBaUlVYW1Gd1lXNWxjMlVnWVhWMGJ5QnlaWEJoYVhLU0FSQmhkWFJ2WDNKbGNHRnBjbDl6YUc5d21nRWpRMmhhUkZOVmFFNU5Semx1VXpCV1NsRXdSbTVVVlU1dVkyMVdlR0l3WkVKRlFVV3FBV0FLQnk5dEx6QnJOR29RQVNvWUloUnFZWEJoYm1WelpTQmhkWFJ2SUhKbGNHRnBjaWdBTWg4UUFTSWJWRUpwOUlhbXB1d3lWMXRwWjc5ZkR2NUZLTzdCeDF1cUhtdHJNaGdRQWlJVWFtRndZVzVsYzJVZ1lYVjBieUJ5WlhCaGFYTGdBUUQ2QVFRSUFCQTCSAUcKCy9nLzF0ZDZ5bGd6Cg0vZy8xMXQxMDZrcGxfCg0vZy8xMW54cHRrcWMzCgsvZy8xdm45cGtzOAoNL2cvMTFoYjVwdmN3aw%3D%3D&src=2&spp=CgsvZy8xdGQ2eWxnejqAAldpSVFBQkFCRUFJWUFCZ0JHQUlpRkdwaGNHRnVaWE5sSUdGMWRHOGdjbVZ3WVdseWtnRVFZWFYwYjE5eVpYQmhhWEpmYzJodmNKb0JJME5vV2tSVFZXaE9UVWM1YmxNd1ZrcFJNRVp1VkZWT2JtTnRWbmhpTUdSQ1JVRkZxZ0ZnQ2djdmJTOHdhelJxRUFFcUdDSVVhbUZ3WVc1bGMyVWdZWFYwYnlCeVpYQmhhWElvQURJZkVBRWlHMVJDYWZTR3BxYnNNbGRiYVdlX1h3Ny1SU2p1d2NkYnFoNXJheklZRUFJaUZHcGhjR0Z1WlhObElHRjFkRzhnY21Wd1lXbHk%3D&serdesk=1&lrlstt=1742526051278&ved=2ahUKEwjjqtOxl5qMAxXql-4BHYemJKoQvS56BAgsEAE&scp=ChVnY2lkOmF1dG9fcmVwYWlyX3Nob3ASPxISCe2v_MoagU2HEdQ54eWfVN2FIhFBbWVyaWNhbiBGb3JrLCBVVCoUDbxSCxgVWSBXvR0KVBYYJfY6Yr0wARoUamFwYW5lc2UgYXV0byByZXBhaXIiFGphcGFuZXNlIGF1dG8gcmVwYWlyKhBBdXRvIHJlcGFpciBzaG9w" target="_blank" class="social-icon-header" aria-label="Visit our Google Maps page">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </a>
+                            <a href="https://www.tiktok.com/@japanese_auto_repair?lang=en" target="_blank" class="social-icon-header" aria-label="Tiktok">
+                                <i class="fa-brands fa-tiktok"></i>
+                            </a>
+
+                        </div>
+                </ul>
+            </nav>
+            <button class="appointment-button" onclick="location.href='./contact.html'">Get Quote</button>
+            <div class="location-info">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon-header">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="https://www.instagram.com/_japaneseautorepair_/" target="_blank" class="social-icon-header">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.tiktok.com/@japanese_auto_repair?lang=en" target="_blank" class="social-icon-header" aria-label="Tiktok">
+                    <i class="fa-brands fa-tiktok"></i>
+                </a>
+                <a href="https://www.google.com/localservices/prolist?g2lbs=AAEPWCv1y3u3JTBds1Zp3UTm0hQ9QVI4jUDjRmcYLLUCGz3pPw8QnjdGmE-VpJwCF5n_KvtwlWjJpYuEH2M1s1zaawcoK6anXQ%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=japanese%20auto%20repair&oq=japanese%20auto%20repair&slp=MgBSAggCYAB6uAJDaFJxWVhCaGJtVnpaU0JoZFhSdklISmxjR0ZwY2tqZWs3dkQ1WUNBZ0FoYUloQUFFQUVRQWhnQUdBRVlBaUlVYW1Gd1lXNWxjMlVnWVhWMGJ5QnlaWEJoYVhLU0FSQmhkWFJ2WDNKbGNHRnBjbDl6YUc5d21nRWpRMmhhUkZOVmFFNU5Semx1VXpCV1NsRXdSbTVVVlU1dVkyMVdlR0l3WkVKRlFVV3FBV0FLQnk5dEx6QnJOR29RQVNvWUloUnFZWEJoYm1WelpTQmhkWFJ2SUhKbGNHRnBjaWdBTWg4UUFTSWJWRUpwOUlhbXB1d3lWMXRwWjc5ZkR2NUZLTzdCeDF1cUhtdHJNaGdRQWlJVWFtRndZVzVsYzJVZ1lYVjBieUJ5WlhCaGFYTGdBUUQ2QVFRSUFCQTCSAUcKCy9nLzF0ZDZ5bGd6Cg0vZy8xMXQxMDZrcGxfCg0vZy8xMW54cHRrcWMzCgsvZy8xdm45cGtzOAoNL2cvMTFoYjVwdmN3aw%3D%3D&src=2&spp=CgsvZy8xdGQ2eWxnejqAAldpSVFBQkFCRUFJWUFCZ0JHQUlpRkdwaGNHRnVaWE5sSUdGMWRHOGdjbVZ3WVdseWtnRVFZWFYwYjE5eVpYQmhhWEpmYzJodmNKb0JJME5vV2tSVFZXaE9UVWM1YmxNd1ZrcFJNRVp1VkZWT2JtTnRWbmhpTUdSQ1JVRkZxZ0ZnQ2djdmJTOHdhelJxRUFFcUdDSVVhbUZ3WVc1bGMyVWdZWFYwYnlCeVpYQmhhWElvQURJZkVBRWlHMVJDYWZTR3BxYnNNbGRiYVdlX1h3Ny1SU2p1d2NkYnFoNXJheklZRUFJaUZHcGhjR0Z1WlhObElHRjFkRzhnY21Wd1lXbHk%3D&serdesk=1&lrlstt=1742526051278&ved=2ahUKEwjjqtOxl5qMAxXql-4BHYemJKoQvS56BAgsEAE&scp=ChVnY2lkOmF1dG9fcmVwYWlyX3Nob3ASPxISCe2v_MoagU2HEdQ54eWfVN2FIhFBbWVyaWNhbiBGb3JrLCBVVCoUDbxSCxgVWSBXvR0KVBYYJfY6Yr0wARoUamFwYW5lc2UgYXV0byByZXBhaXIiFGphcGFuZXNlIGF1dG8gcmVwYWlyKhBBdXRvIHJlcGFpciBzaG9w" target="_blank" class="social-icon-header" aria-label="Visit our Google Maps page">
+                    <i class="fa-solid fa-location-dot"></i>
+                </a>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content with Updated Styling -->
+  <!-- Main Content with Updated Styling -->
+<!-- Main Content with Updated Styling -->
+<main class="services-page">
+    <!-- Hero Section -->
+    <section class="services-hero">
+        <div class="hero-content">
+            <h1>Our Services</h1>
+            <p>Expert repair and maintenance for Japanese vehicles, delivered with precision and care.</p>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-container">
+        <!-- Sidebar -->
+        <aside class="services-sidebar">
+            <h2>Service Categories</h2>
+            <ul>
+                <li><a href="javascript:void(0);" onclick="showService('default')" class="active"><h4>Main Services</h4></a></li>
+                <hr>
+                <li><a href="javascript:void(0);" onclick="showService('ac')">AC Repair Service</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('alternators')">Alternator Repair</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('tuneup')">Auto Tune-Ups</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('brake')">Brake Repairs</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('check-engine')">Check Engine Lights</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('diagnostic')">Diagnostic Services</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('oil')">Oil Change & Maintenance</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('pumps')">Water Pump Repair</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('radiator')">Radiator Repair</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('renewal')">On Spot Renewal</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('safety')">Safety and Emission Testing</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('shocks')">Shocks and Struts</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('starter-motors')">Starter Motor Repair</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('timing-belts')">Timing Belts</a></li>
+                <h2>Additional Services</h2>
+                <li><a href="javascript:void(0);" onclick="showService('detail')">Detailing Service</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('engine')">Engine Rebuild</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('fuel-air')">Fuel & Air Induction</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('general')">General Japanese Vehicles</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('transmission')">Transmission & Clutch</a></li>
+                <li><a href="javascript:void(0);" onclick="showService('battery')">Toyota Prius Battery</a></li>
+            </ul>
+        </aside>
+
+        <!-- Services Content -->
+        <div class="services-content">
+            <!-- Default Services Grid -->
+            <div class="services-grid" id="default-services">
+                <article class="service-card" aria-labelledby="diagnostic-title" aria-describedby="diagnostic-desc" onclick="showService('diagnostic')">
+                    <img src="./assets/car-diagnostic-service.jpg" alt="Mechanic inspecting a car engine for diagnostic services" loading="lazy">
+                    <h3 id="diagnostic-title">Diagnostic Services</h3>
+                    <p id="diagnostic-desc">With our expertise spanning two decades and the utilization of cutting-edge technology, we excel at vehicle diagnostics.</p>
+                </article>
+                <article class="service-card" aria-labelledby="brake-title" aria-describedby="brake-desc" onclick="showService('brake')">
+                    <img src="./assets/transmission4.jpeg" alt="Close-up of brake components being repaired" loading="lazy">
+                    <h3 id="brake-title">Brake Repairs</h3>
+                    <p id="brake-desc">We specialize in providing comprehensive brake repair services to quickly diagnose and address any brake issues.</p>
+                </article>
+                <article class="service-card" aria-labelledby="tuneup-title" aria-describedby="tuneup-desc" onclick="showService('tuneup')">
+                    <img src="./assets/EnginRebuild8.jpg" alt="Mechanic performing an auto tune-up under the hood of a car" loading="lazy">
+                    <h3 id="tuneup-title">Auto Tune-Ups</h3>
+                    <p id="tuneup-desc">Our Auto Tune-Up service is the ultimate solution for maintaining your vehicle's smooth and efficient operation.</p>
+                </article>
+                <article class="service-card" aria-labelledby="renewal-title" aria-describedby="renewal-desc" onclick="showService('renewal')">
+                    <img src="./assets/licenseRenewal.png" alt="Friendly staff assisting with vehicle registration renewal" loading="lazy">
+                    <h3 id="renewal-title">On Spot Renewal</h3>
+                    <p id="renewal-desc">Our On-Spot Renewal service simplifies the frequently time-consuming task of renewing your vehicle's registration.</p>
+                </article>
+                <article class="service-card" aria-labelledby="oil-title" aria-describedby="oil-desc" onclick="showService('oil')">
+                    <img src="./assets/OIlChange.jpg" alt="Oil being poured into a car engine during a maintenance service" loading="lazy">
+                    <h3 id="oil-title">Oil Change & Maintenance</h3>
+                    <p id="oil-desc">Our Oil Change Service ensures quick and efficient oil changes, utilizing top-grade oils.</p>
+                </article>
+                <article class="service-card" aria-labelledby="ac-title" aria-describedby="ac-desc" onclick="showService('ac')">
+                    <img src="./assets/ACRepairServcie.jpg" alt="AC system repair in progress with a technician using specialized tools" loading="lazy">
+                    <h3 id="ac-title">AC Repair Service</h3>
+                    <p id="ac-desc">Experience ultimate comfort and coolness on scorching days with our unparalleled AC repair services.</p>
+                </article>
+                <article class="service-card" aria-labelledby="radiator-title" aria-describedby="radiator-desc" onclick="showService('radiator')">
+                    <img src="./assets/service-RadiatorRepair.jpeg" alt="Technician repairing a car radiator" loading="lazy">
+                    <h3 id="radiator-title">Radiator Repair</h3>
+                    <p id="radiator-desc">Our radiator repair service ensures your cooling system is efficient, preventing overheating and engine damage.</p>
+                </article>
+                <article class="service-card" aria-labelledby="pumps-title" aria-describedby="pumps-desc" onclick="showService('pumps')">
+                    <img src="./assets/water-pump.jpeg" alt="Technician replacing a water pump" loading="lazy">
+                    <h3 id="pumps-title">Water Pump Repair</h3>
+                    <p id="pumps-desc">We specialize in repairing and replacing water pumps to maintain optimal engine cooling and performance.</p>
+                </article>
+                <article class="service-card" aria-labelledby="alternators-title" aria-describedby="alternators-desc" onclick="showService('alternators')">
+                    <img src="./assets/mechanic-installing-alternator.jpeg" alt="Technician testing an alternator" loading="lazy">
+                    <h3 id="alternators-title">Alternator Repair</h3>
+                    <p id="alternators-desc">Our alternator repair service ensures your vehicle’s electrical system is reliable and fully functional.</p>
+                </article>
+                <article class="service-card" aria-labelledby="starter-motors-title" aria-describedby="starter-motors-desc" onclick="showService('starter-motors')">
+                    <img src="./assets/starter-motor.jpeg" alt="Technician replacing a starter motor" loading="lazy">
+                    <h3 id="starter-motors-title">Starter Motor Repair</h3>
+                    <p id="starter-motors-desc">We provide expert repairs for starter motors to ensure your vehicle starts reliably every time.</p>
+                </article>
+                <article class="service-card" aria-labelledby="shocks-title" aria-describedby="shocks-desc" onclick="showService('shocks')">
+                    <img src="./assets/shocks 2.jpeg" alt="Technician installing shocks and struts" loading="lazy">
+                    <h3 id="shocks-title">Shocks and Struts</h3>
+                    <p id="shocks-desc">Our shocks and struts service improves your vehicle’s handling, stability, and ride comfort.</p>
+                </article>
+                <article class="service-card" aria-labelledby="check-engine-title" aria-describedby="check-engine-desc" onclick="showService('check-engine')">
+                    <img src="./assets/check-engine-light.jpeg" alt="Dashboard with check engine light on" loading="lazy">
+                    <h3 id="check-engine-title">Check Engine Lights</h3>
+                    <p id="check-engine-desc">We diagnose and resolve issues indicated by check engine lights for optimal vehicle performance.</p>
+                </article>
+                <article class="service-card" aria-labelledby="timing-belts-title" aria-describedby="timing-belts-desc" onclick="showService('timing-belts')">
+                    <img src="./assets/replace-timing-belt.jpeg" alt="Technician replacing a timing belt" loading="lazy">
+                    <h3 id="timing-belts-title">Timing Belts</h3>
+                    <p id="timing-belts-desc">Our timing belt service prevents engine damage by ensuring timely replacement and maintenance.</p>
+                </article>
+                <article class="service-card" aria-labelledby="safety-title" aria-describedby="safety-desc" onclick="showService('safety')">
+                    <img src="./assets/emmisisons.jpeg" alt="Vehicle undergoing safety and emission testing" loading="lazy">
+                    <h3 id="safety-title">Safety and Emission Testing</h3>
+                    <p id="safety-desc">We provide thorough safety inspections and emission tests to keep your vehicle compliant and safe.</p>
+                </article>
+            </div>
+
+            <!-- Individual Service Details -->
+            <div class="service-details" id="individual-services">
+                <article class="service-detail" id="diagnostic">
+                    <img src="./assets/car-diagnostic-service.jpg" alt="Diagnostic Services" loading="lazy">
+                    <h3>Diagnostic Services</h3>
+                    <p>At our Japanese auto shop, we take pride in offering top-notch diagnostic services to ensure your vehicle runs smoothly. Using advanced diagnostic tools, we can read your car's onboard computer systems to identify any issues with the engine, transmission, electrical systems, and sensors. Our technicians are experts in working with Japanese brands like Toyota, Honda, Nissan, and Subaru, and we utilize specialized software to conduct thorough checks. This helps us quickly pinpoint any problems, perform precise repairs, and reduce the chances of future issues. We also offer system updates and recalibrations to keep your vehicle performing at its best. Our goal is to give you peace of mind knowing your car is in great shape.</p>
+                </article>
+                <article class="service-detail" id="brake">
+                    <img src="./assets/transmission4.jpeg" alt="Brake Repairs" loading="lazy">
+                    <h3>Brake Repairs</h3>
+                    <p>When it comes to brake repairs, we ensure your safety is our top priority. We offer comprehensive brake services, from simple pad replacements to more complex rotor and caliper repairs. Our technicians are trained to work with all Japanese makes and models, ensuring that each brake component is thoroughly inspected and repaired using high-quality parts. Whether you’re hearing unusual noises, feeling vibrations while braking, or experiencing a loss of braking power, we’ll diagnose the issue and recommend the best solution. We also check fluid levels, brake lines, and sensors to make sure everything is functioning properly. With our expert brake repairs, you can drive with confidence, knowing your vehicle’s braking system is in peak condition.</p>
+                </article>
+                <article class="service-detail" id="tuneup">
+                    <img src="./assets/EnginRebuild8.jpg" alt="Auto Tune-Ups" loading="lazy">
+                    <h3>Auto Tune-Ups</h3>
+                    <p>Our auto tune-up service is designed to keep your vehicle running smoothly and efficiently. We focus on optimizing your car's performance by checking and adjusting key components, such as the spark plugs, air and fuel filters, ignition system, and timing. Regular tune-ups can help improve fuel efficiency, reduce emissions, and prevent costly repairs down the road. Our experienced technicians, familiar with Japanese makes like Toyota, Honda, and Nissan, use the latest tools and techniques to ensure everything is running at its best. Whether it’s a minor adjustment or a more detailed check, we’ll make sure your vehicle is performing at its peak, saving you time and money in the long run.</p>
+                </article>
+                <article class="service-detail" id="renewal">
+                    <img src="./assets/licenseRenewal.png" alt="On-Spot Renewal" loading="lazy">
+                    <h3>On Spot Renewal</h3>
+                    <p>Our car registration renewal service is designed to make the process quick and easy for you. We handle all the paperwork and ensure that your vehicle’s registration is updated on time, so you can avoid fines or penalties. Whether you're renewing for the first time or have an expired registration, we take care of everything from verifying your vehicle’s details to submitting the necessary documents to the DMV. Our team will guide you through the process and make sure your vehicle is compliant with all regulations, giving you peace of mind and keeping you on the road legally and hassle-free.</p>
+                </article>
+                <article class="service-detail" id="oil">
+                    <img src="./assets/OIlChange.jpg" alt="Oil Change & Maintenance" loading="lazy">
+                    <h3>Oil Change & Maintenance</h3>
+                    <p>Our oil change service is quick, efficient, and designed to keep your engine running smoothly. Regular oil changes are essential for maintaining engine performance and extending the life of your vehicle. We use high-quality oils and filters that are best suited for your specific make and model, ensuring optimal lubrication for your engine’s moving parts. During each oil change, we also check for any leaks, inspect the oil filter, and top off other essential fluids like coolant and brake fluid. With our expert oil change service, you can drive with confidence, knowing that your engine is properly maintained and protected.</p>
+                </article>
+                <article class="service-detail" id="ac">
+                    <img src="./assets/ACRepairServcie.jpg" alt="AC Repair Service" loading="lazy">
+                    <h3>AC Repair Service</h3>
+                    <p>Our A/C repair service is designed to keep your vehicle cool and comfortable, especially during the hot months. Whether your A/C is blowing warm air, making strange noises, or not working at all, our experienced technicians can diagnose the issue and get it back in working order. We offer a full range of A/C services, including refrigerant recharging, compressor repairs, leak detection, and fixing faulty air conditioning components. We use the latest tools and high-quality parts to ensure the system is repaired properly and efficiently. Our goal is to restore your A/C’s cooling performance, so you can enjoy a comfortable ride no matter the temperature outside.</p>
+                </article>
+                <article class="service-detail" id="radiator">
+                    <img src="./assets/service-RadiatorRepair.jpeg" alt="Radiator Repair" loading="lazy">
+                    <h3>Radiator Repair</h3>
+                    <p>Our radiator repair service ensures your cooling system is efficient, preventing overheating and engine damage. We inspect, repair, or replace radiators, hoses, and thermostats, using high-quality parts to maintain optimal performance. Whether you're dealing with leaks, corrosion, or poor cooling, our technicians use advanced tools to diagnose and fix the issue quickly, keeping your engine safe and reliable.</p>
+                </article>
+                <article class="service-detail" id="pumps">
+                    <img src="./assets/water-pump.jpeg" alt="Water Pump Repair" loading="lazy">
+                    <h3>Water Pump Repair</h3>
+                    <p>Our water pump repair service is crucial for maintaining your engine's cooling system. We diagnose issues like leaks, noises, or overheating caused by a failing water pump and provide expert repairs or replacements. Using durable parts and precise techniques, we ensure your water pump circulates coolant effectively, preventing engine overheating and extending its lifespan.</p>
+                </article>
+                <article class="service-detail" id="alternators">
+                    <img src="./assets/mechanic-installing-alternator.jpeg" alt="Alternator Repair" loading="lazy">
+                    <h3>Alternator Repair</h3>
+                    <p>Our alternator repair service keeps your vehicle’s electrical system running smoothly. We diagnose problems like dimming lights, battery issues, or strange noises and repair or replace the alternator as needed. Using high-quality components, we ensure your alternator charges the battery and powers electrical systems reliably, preventing breakdowns and ensuring dependable performance.</p>
+                </article>
+                <article class="service-detail" id="starter-motors">
+                    <img src="./assets/starter-motor.jpeg" alt="Starter Motor Repair" loading="lazy">
+                    <h3>Starter Motor Repair</h3>
+                    <p>Our starter motor repair service addresses issues like slow cranking or failure to start. We inspect, repair, or replace faulty starter motors, ensuring your vehicle starts reliably every time. Our technicians use advanced diagnostic tools and high-quality parts to restore your starter’s performance, minimizing downtime and keeping your vehicle in top condition.</p>
+                </article>
+                <article class="service-detail" id="shocks">
+                    <img src="./assets/shocks 2.jpeg" alt="Shocks and Struts" loading="lazy">
+                    <h3>Shocks and Struts</h3>
+                    <p>Our shocks and struts service improves your vehicle’s handling, stability, and ride comfort. We inspect and replace worn components to ensure smooth suspension performance, better control, and reduced wear on other parts. Using premium parts, we enhance safety and comfort, making every drive more enjoyable and secure.</p>
+                </article>
+                <article class="service-detail" id="check-engine">
+                    <img src="./assets/check-engine-light.jpeg" alt="Check Engine Lights" loading="lazy">
+                    <h3>Check Engine Lights</h3>
+                    <p>When your check engine light comes on, our service quickly identifies the cause using state-of-the-art diagnostic tools. We address issues ranging from minor sensor problems to major engine faults, providing repairs that restore performance and prevent further damage. Our goal is to ensure your vehicle runs efficiently and reliably.</p>
+                </article>
+                <article class="service-detail" id="timing-belts">
+                    <img src="./assets/replace-timing-belt.jpeg" alt="Timing Belts" loading="lazy">
+                    <h3>Timing Belts</h3>
+                    <p>Our timing belt service prevents catastrophic engine failure by ensuring timely replacement and maintenance. We inspect belts for wear, replace them with high-quality parts, and check related components like tensioners and pulleys. This service protects your engine’s longevity and performance, giving you peace of mind on every journey.</p>
+                </article>
+                <article class="service-detail" id="safety">
+                    <img src="./assets/emmisisons.jpeg" alt="Safety and Emission Testing" loading="lazy">
+                    <h3>Safety and Emission Testing</h3>
+                    <p>Our safety and emission testing service ensures your vehicle meets all regulatory standards. We check brakes, lights, exhaust systems, and other critical components, providing repairs if needed to pass inspections. This service keeps your vehicle safe, environmentally compliant, and road-legal, with minimal hassle.</p>
+                </article>
+                <article class="service-detail" id="detail">
+                    <img src="./assets/detailing.jpeg" alt="Detailing" loading="lazy">
+                    <h3>Detailing Service</h3>
+                    <p>Our detailing service brings out the best in your vehicle, inside and out. We meticulously clean, polish, and protect every surface—from the exterior paint and wheels to the interior upholstery and dashboard. Drive away with a car that looks, feels, and smells like new.</p>
+
+                </article>
+                <article class="service-detail" id="engine">
+                    <h3>Japanese Engine Rebuild</h3>
+                    <p>Expert rebuilding of Japanese vehicle engines with precision and care.</p>
+                    <div class="gallery-grid" id="engine-gallery">
+                        <img src="./assets/EnginRebuild1.jpg" alt="Engine Rebuild 1" loading="lazy">
+                        <img src="./assets/EnginRebuild2.jpg" alt="Engine Rebuild 2" loading="lazy">
+                        <img src="./assets/EnginRebuild3.jpg" alt="Engine Rebuild 3" loading="lazy">
+                        <img src="./assets/EnginRebuild4.jpg" alt="Engine Rebuild 4" loading="lazy">
+                        <img src="./assets/EnginRebuild5.jpg" alt="Engine Rebuild 5" loading="lazy">
+                        <img src="./assets/EnginRebuild6.jpg" alt="Engine Rebuild 6" loading="lazy">
+                        <img src="./assets/EnginRebuild7.jpg" alt="Engine Rebuild 7" loading="lazy">
+                        <img src="./assets/EnginRebuild8.jpg" alt="Engine Rebuild 8" loading="lazy">
+                    </div>
+                </article>
+                <article class="service-detail" id="fuel-air">
+                    <h3>BG/Fuel & Air Induction Service</h3>
+                    <p>Comprehensive fuel and air induction services to optimize engine performance.</p>
+                    <div class="gallery-grid" id="fuel-air-gallery">
+                        <img src="./assets/Fuel&Air1.JPG" alt="Fuel & Air 1" loading="lazy">
+                        <img src="./assets/Fuel&Air2.JPG" alt="Fuel & Air 2" loading="lazy">
+                        <img src="./assets/Fuel&Air3.png" alt="Fuel & Air 3" loading="lazy">
+                        <img src="./assets/Fuel&Air5.png" alt="Fuel & Air 5" loading="lazy">
+                        <img src="./assets/Fuel&Air6.JPG" alt="Fuel & Air 6" loading="lazy">
+                        <img src="./assets/Fuel&Air8.jpeg" alt="Fuel & Air 8" loading="lazy">
+                        <img src="./assets/Fuel&Air9.JPG" alt="Fuel & Air 9" loading="lazy">
+                        <img src="./assets/Fuel&Air10.jpeg" alt="Fuel & Air 10" loading="lazy">
+                        <img src="./assets/Fuel&Air12.jpeg" alt="Fuel & Air 12" loading="lazy">
+                        <img src="./assets/Fuel&Air13.jpeg" alt="Fuel & Air 13" loading="lazy">
+                        <img src="./assets/Fuel&Air11.JPG" alt="Fuel & Air 11" loading="lazy">
+                        <img src="./assets/Fuel&Air4.JPG" alt="Fuel & Air 4" loading="lazy">
+                        <img src="./assets/Fuel&Air7.JPG" alt="Fuel & Air 7" loading="lazy">
+                        <img src="./assets/Fuel&Air14.jpeg" alt="Fuel & Air 14" loading="lazy">
+                    </div>
+                </article>
+                <article class="service-detail" id="transmission">
+                    <h3>Transmission & Clutch Replacement</h3>
+                    <p>Professional replacement and repair of transmissions and clutches.</p>
+                    <div class="gallery-grid" id="transmission-gallery">
+                        <img src="./assets/transmission1.jpeg" alt="Transmission 1" loading="lazy">
+                        <img src="./assets/transmission2.jpeg" alt="Transmission 2" loading="lazy">
+                        <img src="./assets/transmission3.jpeg" alt="Transmission 3" loading="lazy">
+                        <img src="./assets/transmission4.jpeg" alt="Transmission 4" loading="lazy">
+                        <img src="./assets/transmission5.jpeg" alt="Transmission 5" loading="lazy">
+                        <img src="./assets/transmission6.jpeg" alt="Transmission 6" loading="lazy">
+                        <img src="./assets/transmission7.jpeg" alt="Transmission 7" loading="lazy">
+                    </div>
+                </article>
+                <article class="service-detail" id="battery">
+                    <h3>Toyota Prius Battery Service</h3>
+                    <p>Specialized battery service for Toyota Prius vehicles.</p>
+                    <div class="gallery-grid" id="battery-gallery">
+                        <img src="./assets/toyotaBattery1.jpeg" alt="Battery 1" loading="lazy">
+                        <img src="./assets/toyotaBattery2.jpeg" alt="Battery 2" loading="lazy">
+                        <img src="./assets/toyotaBattery3.jpeg" alt="Battery 3" loading="lazy">
+                        <img src="./assets/toyotaBattery4.jpeg" alt="Battery 4" loading="lazy">
+                        <img src="./assets/toyotaBattery5.jpeg" alt="Battery 5" loading="lazy">
+                        <img src="./assets/toyotaBattery6.jpeg" alt="Battery 6" loading="lazy">
+                        <img src="./assets/toyotaBattery7.jpeg" alt="Battery 7" loading="lazy">
+                        <img src="./assets/toyotaBattery8.jpeg" alt="Battery 8" loading="lazy">
+                    </div>
+                </article>
+                <article class="service-detail" id="general">
+                    <h3>Japanese Cars, Trucks, & Minivans Service</h3>
+                    <p>General service and maintenance for all Japanese cars, trucks, and minivans.</p>
+                    <div class="gallery-grid" id="general-gallery">
+                        <img src="./assets/JapCarsTrucks1.jpeg" alt="General 1" loading="lazy">
+                        <img src="./assets/JapCarsTrucks2.jpeg" alt="General 2" loading="lazy">
+                        <img src="./assets/JapCarsTrucks3.jpeg" alt="General 3" loading="lazy">
+                        <img src="./assets/JapCarsTrucks4.jpeg" alt="General 4" loading="lazy">
+                        <img src="./assets/JapCarsTrucks5.jpeg" alt="General 5" loading="lazy">
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+</main>
+
+   <!-- Footer (Unchanged) -->
+   <section class="info-section">
+    <div class="info-column margin">
+        <br>
+        <h3 class="margin">Contact Details</h3>
+        <p>
+            <i class="fas fa-map-marker-alt" aria-hidden="true"></i>
+            <span class="sr-only">Address:</span> 
+            <a href="https://maps.google.com/?q=235 W 300 S, Provo, UT 84601" target="_blank">
+              235 W 300 S, Provo, UT 84601
+            </a>
+          </p>
+        
+          <p>
+            <i class="fas fa-phone-alt" aria-hidden="true"></i>
+            <span class="sr-only">Phone number:</span> 
+            <a href="tel:+18013739696">(801)-373-9696</a>
+          </p>
+        
+        <br class="divide">
+        <button class="appointment-button margin" aria-label="Book an appointment" onclick="location.href='./contact.html'">Book Appointment</button>
+        
+    </div>
+    <div class="info-column margin">
+        <h3 class="margin">Working Hours</h3>
+        <p>Monday: 8:00 am - 6:00 pm</p>
+        <p>Tuesday: 8:00 am - 6:00 pm</p>
+        <p>Wednesday: 8:00 am - 6:00 pm</p>
+        <p>Thursday: 8:00 am - 6:00 pm</p>
+        <p>Friday: 8:00 am - 6:00 pm</p>
+        <p>Saturday: 8:00 am - 2:00 pm</p>
+        <p>Sunday: Closed</p>
+    </div>
+    <div class="info-column">
+        <h3 class="">Japanese Auto Repair</h3>
+        <p class="widthp">
+            At Japanese Auto Repair Shop, we pride ourselves on delivering reliable and top-quality service specializing in Japanese vehicles. I love cars
+        </p>
+    </div>
+</section>
+<footer>
+    <section class="social-media">
+        <a href="https://www.facebook.com" target="_blank" class="social-icon-footer">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+        <a href="https://www.instagram.com/_japaneseautorepair_/" target="_blank" class="social-icon-footer">
+            <i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://www.tiktok.com/@japanese_auto_repair?lang=en" target="_blank" class="social-icon-footer" aria-label="Tiktok">
+            <i class="fa-brands fa-tiktok"></i>
+        </a>
+        <a href="https://www.google.com/localservices/prolist?g2lbs=AAEPWCv1y3u3JTBds1Zp3UTm0hQ9QVI4jUDjRmcYLLUCGz3pPw8QnjdGmE-VpJwCF5n_KvtwlWjJpYuEH2M1s1zaawcoK6anXQ%3D%3D&hl=en-US&gl=us&cs=1&ssta=1&q=japanese%20auto%20repair&oq=japanese%20auto%20repair&slp=MgBSAggCYAB6uAJDaFJxWVhCaGJtVnpaU0JoZFhSdklISmxjR0ZwY2tqZWs3dkQ1WUNBZ0FoYUloQUFFQUVRQWhnQUdBRVlBaUlVYW1Gd1lXNWxjMlVnWVhWMGJ5QnlaWEJoYVhLU0FSQmhkWFJ2WDNKbGNHRnBjbDl6YUc5d21nRWpRMmhhUkZOVmFFNU5Semx1VXpCV1NsRXdSbTVVVlU1dVkyMVdlR0l3WkVKRlFVV3FBV0FLQnk5dEx6QnJOR29RQVNvWUloUnFZWEJoYm1WelpTQmhkWFJ2SUhKbGNHRnBjaWdBTWg4UUFTSWJWRUpwOUlhbXB1d3lWMXRwWjc5ZkR2NUZLTzdCeDF1cUhtdHJNaGdRQWlJVWFtRndZVzVsYzJVZ1lYVjBieUJ5WlhCaGFYTGdBUUQ2QVFRSUFCQTCSAUcKCy9nLzF0ZDZ5bGd6Cg0vZy8xMXQxMDZrcGxfCg0vZy8xMW54cHRrcWMzCgsvZy8xdm45cGtzOAoNL2cvMTFoYjVwdmN3aw%3D%3D&src=2&spp=CgsvZy8xdGQ2eWxnejqAAldpSVFBQkFCRUFJWUFCZ0JHQUlpRkdwaGNHRnVaWE5sSUdGMWRHOGdjbVZ3WVdseWtnRVFZWFYwYjE5eVpYQmhhWEpmYzJodmNKb0JJME5vV2tSVFZXaE9UVWM1YmxNd1ZrcFJNRVp1VkZWT2JtTnRWbmhpTUdSQ1JVRkZxZ0ZnQ2djdmJTOHdhelJxRUFFcUdDSVVhbUZ3WVc1bGMyVWdZWFYwYnlCeVpYQmhhWElvQURJZkVBRWlHMVJDYWZTR3BxYnNNbGRiYVdlX1h3Ny1SU2p1d2NkYnFoNXJheklZRUFJaUZHcGhjR0Z1WlhObElHRjFkRzhnY21Wd1lXbHk%3D&serdesk=1&lrlstt=1742526051278&ved=2ahUKEwjjqtOxl5qMAxXql-4BHYemJKoQvS56BAgsEAE&scp=ChVnY2lkOmF1dG9fcmVwYWlyX3Nob3ASPxISCe2v_MoagU2HEdQ54eWfVN2FIhFBbWVyaWNhbiBGb3JrLCBVVCoUDbxSCxgVWSBXvR0KVBYYJfY6Yr0wARoUamFwYW5lc2UgYXV0byByZXBhaXIiFGphcGFuZXNlIGF1dG8gcmVwYWlyKhBBdXRvIHJlcGFpciBzaG9w" target="_blank" class="social-icon-footer" aria-label="Visit our TikTok page">
+            <i class="fa-solid fa-location-dot"></i>
+            <span class="sr-only">TikTok</span>
+        </a>
+        
+    </section> <br>
+    <p>Japanese Auto Repair © 2024</p>
+</footer>
+
+
+    <!-- JavaScript (Unchanged) -->
+    <script>
+     function showService(serviceId) {
+    const defaultGrid = document.getElementById('default-services');
+    const individualServices = document.getElementById('individual-services');
+    const cards = document.querySelectorAll('.service-detail');
+    const galleries = document.querySelectorAll('.gallery-grid');
+    const links = document.querySelectorAll('.services-sidebar a');
+
+    // Remove active class from all elements
+    cards.forEach(card => card.classList.remove('active'));
+    galleries.forEach(gallery => gallery.classList.remove('active'));
+    links.forEach(link => link.classList.remove('active'));
+
+    // Add active class to the clicked link
+    const activeLink = document.querySelector(`.services-sidebar a[onclick="showService('${serviceId}')"]`);
+    if (activeLink) activeLink.classList.add('active');
+
+    // Show the correct section
+    if (serviceId === 'default') {
+        defaultGrid.style.display = 'grid';
+        individualServices.style.display = 'none';
+    } else {
+        defaultGrid.style.display = 'none';
+        individualServices.style.display = 'block';
+
+        const selectedCard = document.getElementById(serviceId);
+        if (selectedCard) {
+            selectedCard.classList.add('active');
+            selectedCard.scrollIntoView({ behavior: 'smooth', block: 'start' }); // Scroll to the section
+        }
+
+        const selectedGallery = document.getElementById(`${serviceId}-gallery`);
+        if (selectedGallery) selectedGallery.classList.add('active');
+    }
+}
+
+
+        window.onload = function() {
+            showService('default');
+        };
+
+        document.addEventListener("DOMContentLoaded", function () {
+            const images = document.querySelectorAll(".gallery-grid img");
+            images.forEach(img => {
+                img.addEventListener("click", function () {
+                    this.classList.toggle("zoomed");
+                });
+                img.addEventListener("mouseleave", function () {
+                    this.classList.remove("zoomed");
+                });
+            });
+        });
+
+        document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navList = document.querySelector(".nav-list");
+
+    if (menuToggle && navList) {
+        menuToggle.addEventListener("click", function (event) {
+            navList.classList.toggle("active");
+            event.stopPropagation(); // Prevents click from bubbling up
+        });
+
+        document.addEventListener("click", function (event) {
+            if (!navList.contains(event.target) && !menuToggle.contains(event.target)) {
+                navList.classList.remove("active");
+            }
+        });
+    }
+});
+
+    </script>
+</body>
+</html>
